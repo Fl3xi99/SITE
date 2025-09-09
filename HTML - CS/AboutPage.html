@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Site</title>
+</head>
+<body class="special">
+    <special>
+        <nav>
+        <a href="index.html">
+            <img src="/PHOTO/Schermafbeelding_2025-08-07_215244-removebg-preview.png" alt="Logo" style="width: auto; max-height: 100px; display: flex; align-items: center;">
+        </a>
+        <a href="index.html" >Home</a>
+        <a href="AboutPage.html" class="active">About</a>
+        <a href="ContactPage.html">Contact</a>
+    </nav>
+    <div class="hero-slider">
+    <div class="slide active" style="background-image: url('/PHOTO/programmeerachtergrond-met-persoon-die-werkt-met-codes-op-de-computer.jpg');">
+      <div class="slide-text"><h2>Orbys</h2> <h3>About</h3><h4> Orbys is een bedrijf gespecialiseerd in IT elementen zoals <strong>Hardware</strong> en <b>Software</b> kanten.  <br><br>  Wij helpen onze klanten snel verder door middel van een contactlijn of huis bezoeken in de regios Vlaams-Brabant / Antwerpen</h4></div>
+    </div>
+  </div>
+  <script>
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+
+  function showNextSlide() {
+    slides[current].classList.remove('active');
+
+    current = (current + 1) % slides.length;
+
+    slides[current].classList.add('active');
+  }
+
+  setInterval(showNextSlide, 5000); // Change every 5 seconds
+</script>
+
+
+  </div>
+    <main class="page1">
+    </main>
+    </special>
+
+
+</body>
+</html>
